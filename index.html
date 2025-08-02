@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="img2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <header>
+      <h1 id="heading">Weather Dashboard</h1>
+    </header>
+
+    <main class="d-flex  gap-1">
+
+      <aside  class="container pt-5 ">
+        <label for="input" class="fw-bold fs-3">Enter a City Name</label>
+        <input type="text" id="Userinput" placeholder="E.g., Hyderabad, Ranchi, Pune"
+        />
+        <button class="btn btn-primary" id="btn1">Search</button>
+        <label
+          for=""
+          class="d-flex justify-content-center align-items-center gap-1"
+        >
+          <div class="or"></div>
+          <span>Or</span>
+          <div class="or"></div>
+        </label>
+
+        <button class="btn btn-secondary" id="locationBtn">
+          Use Current Location
+        </button>
+      </aside>
+
+      <section class="container d-flex flex-column gap-4 pt-5">
+        <div id="currentWeather" class="d-flex">
+          <div id="weather_content" class="w-50 text-white p-4">
+            <p class="">
+              <span class="" id="cityW"></span>/<span
+                class=""
+                id="stateW"
+              ></span>
+            </p>
+            <p>
+              <span>Temp : </span> <span id="tempW"></span>
+              <span><sup>O</sup>C</span>
+            </p>
+            <p><span>Wind : </span><span id="wind"></span><span>M/S</span></p>
+            <p><span>Humidity : </span><span id="humidity"></span><span>%</span></p>
+          </div>
+          <div
+            id="weatherImg"
+            class="w-50 text-white d-flex flex-column gap-1 justify-content-center align-items-center"
+          >
+            <img src="" id="wImg" alt="" />
+            <p id="text" class="fs-3 p-2"></p>
+          </div>
+        </div>
+        <label for="next" class="fw-bold fs-4">4 - Day Forecast</label>
+        <div id="nextWeather" class="d-flex gap-5 d-sm-flex text-white ">
+          <div class="weather bg-secondary " id="nextBox1">
+            <p><span>(</span><span id="dayName"></span><span>)</span></p>
+            <p><span>Temp :</span><span id="nextTemp"></span><span><sup>O</sup>C</span></p>
+            <p><span>Wind :</span><span id="nextWind"></span><span>M/S</span></p>
+            <p><span>Humidity : </span><span id="humidity"></span><span>%</span></p>
+
+          </div>
+          <div class="weather bg-secondary" id="nextBox2">
+             <p><span>(</span><span id="dayName"></span><span>)</span></p>
+            <p><span>Temp :</span><span id="nextTemp"></span><span><sup>O</sup>C</span></p>
+            <p><span>Wind :</span><span id="nextWind"></span><span>M/S</span></p>
+            <p><span>Humidity : </span><span id="humidity"></span><span>%</span></p>
+          </div>
+          <div class="weather bg-secondary" id="nextBox3">
+             <p><span>(</span><span id="dayName" ></span><span>)</span></p>
+            <p><span>Temp :</span><span id="nextTemp"></span><span><sup>O</sup>C</span></p>
+            <p><span>Wind :</span><span id="nextWind"></span><span>M/S</span></p>
+            <p><span>Humidity : </span><span id="humidity"></span><span>%</span></p>
+          </div>
+          <div class="weather bg-secondary" id="nextBox4">
+            <p><span>(</span><span id="dayName"></span><span>)</span></p>
+            <p><span>Temp :</span><span id="nextTemp"></span><span><sup>O</sup>C</span></p>
+            <p><span>Wind :</span><span id="nextWind"></span><span>M/S</span></p>
+            <p><span>Humidity : </span><span id="humidity"></span><span>%</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
