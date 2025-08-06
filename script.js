@@ -44,7 +44,7 @@ const weather = document.getElementById('currentWeather');
         const weatherImg = document.getElementById('weatherImg')
 
         btnSearch.addEventListener('click',()=>{
-          getData(`http://api.weatherapi.com/v1/current.json?key=c4d6b8c848ef44f68c512239252907&q=${userInput.value}`)
+          getData(`https://api.weatherapi.com/v1/current.json?key=c4d6b8c848ef44f68c512239252907&q=${userInput.value}`)
         })
 
         function displayData(data){
